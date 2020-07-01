@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc165;
+    position: relative;
+}
+
+h3 {
+    position: fixed;
+    background-color: dimgray;
+    top: 5%;
+    left: 0%;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.253);
+}
+
+h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h3:hover {
+    background-color: rgb(75, 164, 253);
+}
+
+#arrow {
+    width: 50px;
+}
+
+.myanimation {
+    animation: animate 10s infinite linear;
+    z-index: 111;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(40px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    30% {
+        transform: translateY(40px);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(40px);
+    }
+    80% {
+        transform: translateY(-20px);
+    }
+    90% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+#play {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(20, 251, 143, 0.767);
+    padding: 10px 50px;
+    border-radius: 10px;
+    word-spacing: 10px;
+    text-decoration-style: solid;
+    outline: none;
+    border: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    z-index: 1111;
+}
+
+#play:hover {
+    transition: linear .3s;
+    box-shadow: none;
+}
+
+#roulette {
+    margin: 20px 0;
+}
+
+.blur {
+    animation: blur 10s;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(1.5px);
+    }
+    80% {
+        filter: blur(1.5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #arrow {
+        width: 40px;
+    }
+    #roulette {
+        width: 350px;
+    }
+    #play {
+        margin-top: 35px;
+        font-size: 20px;
+        padding: 15px 25px;
+        word-spacing: 3px;
+        border-radius: 7px;
+    }
+    h3 {
+        top: 2%;
+        font-size: 18px;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateY(0px);
+        }
+        10% {
+            transform: translateY(20px);
+        }
+        20% {
+            transform: translateY(0px);
+        }
+        30% {
+            transform: translateY(20px);
+        }
+        40% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+        60% {
+            transform: translateY(0px);
+        }
+        70% {
+            transform: translateY(20px);
+        }
+        80% {
+            transform: translateY(0px);
+        }
+        90% {
+            transform: translateY(20px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #arrow {
+        width: 30px;
+    }
+    #roulette {
+        width: 300px;
+    }
+    #play {
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 16px;
+        padding: 10px 20px;
+        word-spacing: 2px;
+        -webkit-text-stroke-width: .3px;
+    }
+    h3 {
+        top: 5%;
+        font-size: 15px;
+    }
+}
